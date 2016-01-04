@@ -1,5 +1,6 @@
 # Project Name #
 
+<!-- How was your day -->
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
 
@@ -19,26 +20,50 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
+  FitBit for your mental Health. 
+
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  Track how your day has been, and compare to others. 
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  Have an interactive visualization of how your day has been in the past. 
+  Everyday, rate your day from a scale of 1-10 and save the data, seeing how it has changed.
+  Compare how happy you usually are on mondays.
+  Mark Important Events and see how your days have been since that event.
+
 ## Problem ##
   > Describe the problem your product solves.
+  Our impressions of our past selves are very murky. How happy were we? It is hard to disagree with what we felt on a particular day in the past. Especially if we see dramatic changes after an event.
+  Furthermore, let's say I have particular traits, that affect my happiness in some particular way. How happy are other people who share those traits? Anonymized data to compare to others would give me a better understanding of myself.
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
+  Using data visualization to make this sort of diary cool is awesome.
+
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+
+  Track your happiness, compare it to others! Understand how important life decisions have affected your life.
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
+  Everyday, input your happiness for a day, and over time the data does the work for you. THe visualizaton helps you see trends.
+
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
+  I was in an abusive relationship with my work and would justify my past by saying that it was ok. I was learning a lot. After 3 months I looked back on my happiness graph and saw how constantly my happiness fell and fell.
+  I couldn't deny it any longer that this job was making me deeply unhappy so I started to make the move to transition out of htere.
+
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+
+  Take it seriously, the more honest you are with your feelings the more likely it is that the data will be helpful for you.
+
+
+
