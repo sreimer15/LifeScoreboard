@@ -5,7 +5,6 @@ angular.module('signUpFormController',[])
   $scope.add = function() {
     var newObject = jQuery.extend({}, $scope.user);
     newObject.happiness = [newObject.happiness];
-    console.log(newObject.date);
     newObject.date = [newObject.date];
     var username = localStorage.setItem(newObject.username, JSON.stringify(newObject));
     var retrievedObject = localStorage.getItem(newObject.username);

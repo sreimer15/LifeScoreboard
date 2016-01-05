@@ -1,22 +1,19 @@
-
+<div class='container center-block'>
+  <div id="userGraph"> </div>
+</div>
 
 <div>
   <form novalidate>
-    Username:<br>
-    <input type="text" ng-model="user.username"><br>
-    Password:<br>
-    <input type="text" ng-model="user.password">
+    <br><br> Date for Entry <br>
+    <input type="date" ng-model="entry.date">
+    <br><br>Input your Happiness!<br>
+
+    <input type="range" ng-model="entry.happiness">
     <br><br>
-    <button ng-click="validate()">validate!</button>
+
+    <button ng-click="addDataPoint()">add!</button>
+    <!-- <button ng-click="reset()">reset Test!</button> -->
+
   </form>
-  <p>user = {{user}}</p>
-  <p>master = {{master}}</p>
-  <p>testing = {{showGraph}}</p>
-  
-
-  <!-- <div ng-if="showGraph === true">
-    <a href="/userGraph">SuperTest</a>
-  </div> -->
-
+  <p>entry = {{entry}}</p>
 </div>
-
