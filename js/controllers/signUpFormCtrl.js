@@ -1,11 +1,13 @@
 angular.module('signUpFormController',[])
 .controller('signUpFormController', function($scope){
-  $scope.master = {firstName: "John", lastName: "Doe"};
+  $scope.master = {username: "John", password: "Doe"};
 
-  $scope.reset = function() {
-      $scope.user = angular.copy($scope.master);
-      console.log('helloman')
+  $scope.add = function() {
+    var username =
+    localStorage.setItem($scope.user.username, JSON.stringify($scope.user));
+    var retrievedObject = localStorage.getItem($scope.user.username);
+    console.log('retrievedObject: ', JSON.parse(retrievedObject));
   };
-  $scope.reset();
+  
 
 });  

@@ -1,32 +1,15 @@
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/bootstrap-material-design.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/bootstrap-material-design.css.map">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/bootstrap-material-design.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/bootstrap-material-design.min.css.map">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/ripples.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/ripples.css.map">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/ripples.min.css">
-    <link rel="stylesheet" href="css/styles.css">
 
 
 <div ng-app='HealthDiaryApp' ng-controller="signUpFormController">
   <form novalidate>
-    First Name:<br>
-    <input type="text" ng-model="user.firstName"><br>
-    Last Name:<br>
-    <input type="text" ng-model="user.lastName">
+    Username:<br>
+    <input type="text" ng-model="user.username"><br>
+    Password:<br>
+    <input type="text" ng-model="user.password">
     <br><br>
-    <button ng-click="reset()">RESET</button>
+    <button ng-click="add()">add!</button>
   </form>
-  <p>form = {{user}}</p>
+  <p>user = {{user}}</p>
   <p>master = {{master}}</p>
 </div>
 
-
-   <link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/material.js">
-   <link type="text/javascrpt" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/material.min.js">
-   <link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/material.min.js.map">
-   <link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/ripples.js">
-   <link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/ripples.min.js">
-   <link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/ripples.min.js.map">
-   <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.js'></script>  

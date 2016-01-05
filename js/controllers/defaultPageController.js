@@ -30,7 +30,7 @@ if (!$scope.done) {
       .y(function(d) { return y(d.happiness); });
       
   // Adds the svg canvas
-  var svg = d3.select(".center-block")
+  var svg = d3.select("#exampleGraph")
       .append("svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
