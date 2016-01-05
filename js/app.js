@@ -2,11 +2,15 @@ angular.module('HealthDiaryApp', ['defaultPageController', 'logInFormController'
 
 .config( ['$routeProvider', function($routeProvider){
   $routeProvider
-  .when('views/signUpForm', {
+  .when('/', {
+    templateUrl: 'views/mainGraph.html',
+    controller: 'defaultPageController'
+  })
+  .when('/signUpForm', {
     templateUrl: 'views/signUpForm.html',
     controller: 'signUpFormController'
   })
-  .when('views/logInForm', {
+  .when('/logInForm', {
     templateUrl: 'views/logInForm.html',
     controller: 'logInFormController'
   })
