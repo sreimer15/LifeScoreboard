@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html ng-app="HealthDiary">
+<html>
 <head>
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/bootstrap-material-design.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/bootstrap-material-design.css.map">
@@ -10,17 +9,27 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/ripples.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/ripples.css.map">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/css/ripples.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
     <title>FitBit for your Mental Health</title>
 </head>
 
-<body ng-controller="defaultPageController">
+<body ng-app="HealthDiaryApp">
 
-<div class='container'>
-  <h1>
-    This App is amazing it needed exactly those features to make me sign up.
-  </h1>
 
-</div>
+
+  <div class='container center-block' id="exampleGraph" ng-controller="defaultPageController">
+    <h1>
+      This App is amazing it needed exactly those features to make me sign up.
+    </h1>
+
+  </div>
+
+  <div class='container actionButtons center-block'>
+    <a href="/views/signUpForm"> <button class="btn btn-raised btn-primary">Sign Up</button> </a>
+    <a href="/views/logInForm"> <button class="btn btn-raised btn-info">Log In!</button></a>
+  </div>
+
 
 
 
@@ -29,9 +38,21 @@
 
 <footer>
   <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
   <script type="text/javascript" src='js/app.js'></script>
+    <script type="text/javascript" src='js/controllers/defaultPageController.js'></script>
+    <script type="text/javascript" src='js/controllers/logInFormCtrl.js'></script>
+    <script type="text/javascript" src='js/controllers/signUpFormCtrl.js'></script>
+    
+
+
+
+
+
+  <!-- <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script> -->
    <link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/material.js">
    <link type="text/javascrpt" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/material.min.js">
    <link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/material.min.js.map">
@@ -39,6 +60,8 @@
    <link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/ripples.min.js">
    <link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.5/js/ripples.min.js.map">
    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.js'></script>  
+
+
 </footer>
 
 </body>
