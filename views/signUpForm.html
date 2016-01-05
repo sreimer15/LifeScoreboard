@@ -3,10 +3,16 @@
 <div>
   <form novalidate>
     Username:<br>
-    <input type="text" ng-model="user.username"><br>
+    <input type="text" ng-model="user.username"><br><br>
     Password:<br>
     <input type="text" ng-model="user.password">
+    <br><br> Date for Entry <br>
+    <input type="date" ng-model="user.date">
+    <br><br>Input your Happiness!<br>
+
+    <input type="range" ng-model="user.happiness">
     <br><br>
+
     <button ng-click="add()">add!</button>
   </form>
   <p>user = {{user}}</p>

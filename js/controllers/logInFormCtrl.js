@@ -1,7 +1,8 @@
 angular.module('logInFormController',[])
 .controller('logInFormController', function($scope){
 $scope.master = {username: "John", password: "Doe"};
-
+  
+  $scope.showGraph = false;
   $scope.validate = function() {   
 
     var username = $scope.user.username;
@@ -13,6 +14,11 @@ $scope.master = {username: "John", password: "Doe"};
       if (JSON.parse(retrievedObject).password === password ){
         // show them their graph
         alert('youDidIt!')
+        alert(JSON.parse(retrievedObject))
+        alert(JSON.parse(retrievedObject).date)
+        alert(JSON.parse(retrievedObject).happiness)
+        $scope.showGraph = true;
+        window.location.href = '/#userGraph';
       }
       else {
         alert ('incorrect password!')

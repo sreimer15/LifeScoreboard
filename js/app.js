@@ -1,4 +1,4 @@
-angular.module('HealthDiaryApp', ['defaultPageController', 'logInFormController', 'signUpFormController', 'ngRoute'])
+angular.module('HealthDiaryApp', ['defaultPageController', 'logInFormController', 'signUpFormController', 'userGraphController', 'ngRoute'])
 
 .config( ['$routeProvider', function($routeProvider){
   $routeProvider
@@ -13,6 +13,10 @@ angular.module('HealthDiaryApp', ['defaultPageController', 'logInFormController'
   .when('/logInForm', {
     templateUrl: 'views/logInForm.html',
     controller: 'logInFormController'
+  })
+  .when('/userGraph', {
+    templateUrl: 'views/userGraph.html',
+    controller: 'userGraphController'
   })
 }]);
 

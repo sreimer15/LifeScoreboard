@@ -3,10 +3,14 @@ angular.module('signUpFormController',[])
   $scope.master = {username: "John", password: "Doe"};
 
   $scope.add = function() {
-    var username =
-    localStorage.setItem($scope.user.username, JSON.stringify($scope.user));
-    var retrievedObject = localStorage.getItem($scope.user.username);
+    var newObject = jQuery.extend({}, $scope.user);
+    newObject.happiness = [newObject.happiness];
+    console.log(newObject.date);
+    newObject.date = [newObject.date];
+    var username = localStorage.setItem(newObject.username, JSON.stringify(newObject));
+    var retrievedObject = localStorage.getItem(newObject.username);
     console.log('retrievedObject: ', JSON.parse(retrievedObject));
+    alert('account created!')
   };
   
 
