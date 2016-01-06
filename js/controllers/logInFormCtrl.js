@@ -1,8 +1,9 @@
 angular.module('logInFormController',[])
-.controller('logInFormController', function($scope){
-$scope.master = {username: "John", password: "Doe"};
+.controller('logInFormController', function($scope, Authentication){
+  console.log(Authentication.storeUser('hello'));
+
+  console.log(Authentication.authStorage);    
   
-  $scope.showGraph = false;
   $scope.validate = function() {   
 
     var username = $scope.user.username;

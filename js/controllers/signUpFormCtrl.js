@@ -7,9 +7,7 @@ angular.module('signUpFormController',[])
     newObject.happiness = [newObject.happiness];
     newObject.date = [newObject.date];
     var username = localStorage.setItem(newObject.username, JSON.stringify(newObject));
-    var retrievedObject = localStorage.getItem(newObject.username);
-    console.log('retrievedObject: ', JSON.parse(retrievedObject));
-    alert('account created!')
+    
   };
   
 
