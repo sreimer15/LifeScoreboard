@@ -14,12 +14,37 @@ angular.module('userGraphController',[])
     userHappiness.push($scope.entry.happiness);
 
     localStorage.setItem(userkey, JSON.stringify(parsedObject));
-    var logging = localStorage.getItem('testing');
-    console.log('retrievedObject: ', JSON.parse(logging));
+
 
     alert('added!')
 
   }
+
+  
+  $scope.insertionSortArrayOnePriority = function(array,array2) {
+
+
+  var sorted = false;
+
+  while(!sorted){
+    sorted = true;
+    for (var i = 0; i < array.length; i++){
+        if(array[i+1] <= array[i] ){
+          var b = array[i+1];
+          var c = array2[i+1]
+          array[i+1] = array[i];
+          array2[i+1] = array2[i];
+          array[i] = b;
+          array2[i] = c;
+          sorted = false;
+      }
+    }
+  }
+   
+    return [array,array2];
+  }
+
+  
 
   // $scope.reset = function() {
   //   var retrievedObject = localStorage.getItem('testing');
@@ -87,16 +112,24 @@ angular.module('userGraphController',[])
 
     var data = [];
     // at some point should sort the array
-    for (var i = 0; i < userDate.length; i++){
+    var tempArray = $scope.insertionSortArrayOnePriority(userDate,userHappiness);
+    console.log('temparray is ', tempArray)
+    var sortedDate = tempArray[0];
+    var sortedHappiness = tempArray[1];
 
+    console.log(sortedDate);
+    console.log(sortedHappiness);
+
+    // create data array with objects
+    for (var i = 0; i < userDate.length; i++){
       var currentObj = {};
-      currentObj.date = Date.parse(userDate[i]);
-      console.log(currentObj.date)
-      currentObj.happiness = userHappiness[i];
+      
+      currentObj.date = Date.parse(sortedDate[i]);
+      currentObj.happiness = sortedHappiness[i];
+    
       data.push(currentObj);
     }
 
-        console.log(data[0].date);
         
 
       // Scale the range of the data
