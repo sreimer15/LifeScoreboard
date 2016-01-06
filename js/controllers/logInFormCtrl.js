@@ -15,10 +15,8 @@ angular.module('logInFormController',[])
       if (JSON.parse(retrievedObject).password === password ){
         // show them their graph
         alert('youDidIt!')
-        alert(JSON.parse(retrievedObject))
-        alert(JSON.parse(retrievedObject).date)
-        alert(JSON.parse(retrievedObject).happiness)
-        $scope.showGraph = true;
+
+        Authentication.authStorage = JSON.parse(retrievedObject);
         window.location.href = '/#userGraph';
       }
       else {

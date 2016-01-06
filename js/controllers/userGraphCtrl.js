@@ -1,10 +1,11 @@
 angular.module('userGraphController',[])
-.controller('userGraphController', function($scope){
+.controller('userGraphController', function($scope, Authentication){
 
-  console.log('userGraphController');
-
+  console.log(Authentication.authStorage)
+  
   $scope.addDataPoint = function(){
-    var retrievedObject = localStorage.getItem('testing');
+    var userkey = Authentication.authStorage.username;
+    var retrievedObject = localStorage.getItem(userkey);
     var parsedObject = JSON.parse(retrievedObject);
     var userDate = parsedObject.date;
     var userHappiness = parsedObject.happiness;
@@ -12,9 +13,11 @@ angular.module('userGraphController',[])
     userDate.push($scope.entry.date);
     userHappiness.push($scope.entry.happiness);
 
-    localStorage.setItem('testing', JSON.stringify(parsedObject));
+    localStorage.setItem(userkey, JSON.stringify(parsedObject));
     var logging = localStorage.getItem('testing');
     console.log('retrievedObject: ', JSON.parse(logging));
+
+    alert('added!')
 
   }
 
@@ -75,7 +78,9 @@ angular.module('userGraphController',[])
 
 
         // This need to be changed in order to be dynamic
-    var retrievedObject = localStorage.getItem('testing');
+    var userkey = Authentication.authStorage.username;
+    var retrievedObject = localStorage.getItem(userkey);
+
     var parsedObject = JSON.parse(retrievedObject);
     var userDate = parsedObject.date;
     var userHappiness = parsedObject.happiness;
