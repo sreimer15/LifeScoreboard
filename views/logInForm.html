@@ -1,18 +1,14 @@
 
 
 <div>
-  <form novalidate>
+  <form novalidate class='form-horizontal container well'>
     Username:<br>
-    <input type="text" ng-model="user.username"><br>
+    <input type="text" ng-model="user.username" class='form-control'><br>
     Password:<br>
-    <input type="text" ng-model="user.password">
+    <input type="text" ng-model="user.password" class='form-control'>
     <br><br>
-    <button ng-click="validate()">validate!</button>
-  </form>
-  <p>user = {{user}}</p>
-  <p>master = {{master}}</p>
-  <p>testing = {{showGraph}}</p>
-  
+    <button ng-click="validate()" class='btn btn-raised btn-success'>validate!</button>
+  </form>  
 
 </div>
 

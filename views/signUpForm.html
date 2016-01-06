@@ -1,21 +1,19 @@
 
 
 <div>
-  <form novalidate>
+  <form novalidate class='form-horizontal container well'>
     Username:<br>
-    <input type="text" ng-model="user.username"><br><br>
+    <input type="text" ng-model="user.username" class='form-control'><br><br>
     Password:<br>
-    <input type="text" ng-model="user.password">
+    <input type="text" ng-model="user.password" class='form-control'>
     <br><br> Date for Entry <br>
-    <input type="date" ng-model="user.date">
+    <input type="date" ng-model="user.date" class='form-control'>
     <br><br>Input your Happiness!<br>
 
-    <input type="range" ng-model="user.happiness">
+    <input type="range" ng-model="user.happiness" class='form-control slider shor noUi-target noUi-ltr noUi-horizontal noUi-connect'>
     <br><br>
 
-    <button ng-click="add()">add!</button>
+    <button ng-click="add()" class='btn btn-raised btn-success'>add!</button>
   </form>
-  <p>user = {{user}}</p>
-  <p>master = {{master}}</p>
 </div>
 
