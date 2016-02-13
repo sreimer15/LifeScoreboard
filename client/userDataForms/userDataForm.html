@@ -1,0 +1,59 @@
+ <div class="row">
+    <form class="col s12" ng-submit='addDataToDataBase(user)'>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="firstName"  ng-model='user.firstName'>
+          <label for="firstName">First Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="lastName"  ng-model='user.lastName'>
+          <label for="lastName">Last Name</label>
+        </div>
+      </div>
+
+      <!-- add a model to it -->
+      <div id="range-input" ng-model='user.happinessLevel'class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="Why"  ng-model='user.why'>
+          <label for="Why">Why do you feel that way?</label>
+        </div>
+      </div>
+      <br><br>
+      What is your Gender Identity?
+      <br><br>
+      <select class="browser-default" ng-model="user.genderIdentity">
+          <option ng-repeat="value in genderChoices">{{value}}</option>
+      </select>
+      <br><br>
+      What is your occupation?
+      <br><br>
+      <select class="browser-default" ng-model="user.occupation">
+          <option ng-repeat="value in occupation">{{value}}</option>
+      </select>
+      <br><br>
+      What is your Yearly Income?
+      <br><br>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="moneyRelated" type='number' ng-model='user.yearlyIncome' aria-label="Income">
+          <label for="What is your Yearly Gross Income?"></label>
+          <span id="currency-default">{{user.yearlyIncome | currency}}</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col m12">
+          <p class="right-align">
+
+            <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Register!</button>
+          </p>
+        </div>
+      </div>
+    </form>
+
+  </div>

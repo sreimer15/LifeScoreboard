@@ -1,0 +1,29 @@
+{
+  "name": "LifeScoreBoard",
+  "description": "Visualize your happiness over time",
+  "main": "client/app.js",
+  "authors": [
+    "Sean Reimer"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "Materialize": "materialize#~0.97.5",
+    "angular-resource": "~1.4.8",
+    "jquery": "~2.2.0",
+    "angular-materialize": "~0.1.2",
+    "nouislider": "~8.2.1",
+    "wnumb": "~1.0.2"
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="bower_components/nouislider/distribute/nouislider.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/Materialize/bin/materialize.css" />
+
+    <title>FitBit for your Mental Health</title>
+</head>
+
+<body ng-app="HealthDiaryApp">
+
+<nav>
+    <div class="navbar nav-wrapper">
+      <a href="#!" class="brand-logo">LifeScoreBoard</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a ui-sref="register"><i class="fa fa-user left"></i>Register</a></li>
+        <li ng-if='!loginCheck()'><a ui-sref="login"><i class="fa fa-sign-in left"></i>Login</a></li>
+        <li ng-if="loginCheck()"><a ui-sref="logout"><i class="fa fa-sign-out left"></i>Logout</a></li>
+      </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+  <div class='container center-block'>
+    <h1>
+    LifeScoreboard allows you to visualize how your day has been in the past
+    </h1>
+  </div>
+
+  <div ui-view class='container center-block'>
+  </div>
+
+<!-- 
+  <div class='container actionButtons center-block'>
+    <a href="/#signUpForm"> <button class="btn btn-raised btn-primary">Sign Up</button> </a>
+    <a href="/#logInForm"> <button class="btn btn-raised btn-info">Log In!</button></a>
+  </div>
+ -->
+
+
+
+
+
+
+
+<footer>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/Materialize/bin/materialize.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="bower_components/angular-materialize/src/angular-materialize.js"></script>
+<script type="text/javascript" src="bower_components/wnumb/wNumb.js"></script>
+<script src="bower_components/nouislider/distribute/nouislider.min.js"></script>
+  <script type="text/javascript" src='app.js'></script>
+
+    <script type="text/javascript" src='controllers/defaultPageController.js'></script>
+    <script type="text/javascript" src='controllers/userGraphCtrl.js'></script>
+    <script type="text/javascript" src='userDataForms/userDataForm.js'></script>
+    <script type="text/javascript" src='auth/login.js'></script>
+    <script type="text/javascript" src='auth/logout.js'></script>
+    <script type='text/javascript' src='services/handleRequest.js'></script>
+    <script type="text/javascript" src='auth/register.js'></script>
+
+   <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.js'></script>  
+
+
+</footer>
+
+</body>
+</html>
